@@ -1,9 +1,9 @@
 <template>
     <div class="container">
         <div class="row justify-content-center mt-3">
-            <div class="col-md-8">
+            <div class="col-md-10">
                 <div class="card">
-                    <h2 class="card-header"> Employee Management </h2>
+                    <h2 class="card-header text-center"> Employee Management </h2>
                     {{store.user}}
                     <div class="card-body">
                         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -32,7 +32,7 @@
                 </div>
             </div>
         </div>
-    </div>
+        </div>
 </template>
 
 <script setup>

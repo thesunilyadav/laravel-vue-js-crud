@@ -9,13 +9,22 @@ const router = createRouter({
 
 router.beforeEach((to, _, next) => {
     console.log(store.user);
-    if (!store.user && to.name != "Login" && to.name != "Register") {
+    let user = localStorage.getItem('user');
+    if (!user && to.name != "Login" && to.name != "Register") {
         next({ path : "/login"});
-    } else if(store.user && (to.name == "Login" || to.name == "Register")) {
+    } else if(user && (to.name == "Login" || to.name == "Register")) {
         next({ path : "/"});
     }else{
         next()
     }
+    
+    // if (!store.user && to.name != "Login" && to.name != "Register") {
+    //     next({ path : "/login"});
+    // } else if(store.user && (to.name == "Login" || to.name == "Register")) {
+    //     next({ path : "/"});
+    // }else{
+    //     next()
+    // }
   });
 
 export default router;

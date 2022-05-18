@@ -6,9 +6,9 @@
         </div>
 
         <div class="m-5">
-            {{ user }}
             <label for="uname"><b>Username</b></label>
             <input
+                class="auth-input"
                 type="text"
                 placeholder="Enter Username"
                 v-model="user.email"
@@ -16,6 +16,7 @@
 
             <label for="psw"><b>Password</b></label>
             <input
+                class="auth-input"
                 type="password"
                 placeholder="Enter Password"
                 v-model="user.password"
