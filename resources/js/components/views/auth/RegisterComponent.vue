@@ -8,18 +8,17 @@
   </div>
 
   <div class="m-5 mt-0 mb-0">
-      {{user}}
     <label for="name"><b>Name</b></label>
-    <input type="text" placeholder="Enter Name" v-model="user.name" >
+    <input type="text" class="auth-input" placeholder="Enter Name" v-model="user.name" >
     
     <label for="email"><b> Email </b></label>
-    <input type="text" placeholder="Enter Email" v-model="user.email" >
+    <input type="text" class="auth-input" placeholder="Enter Email" v-model="user.email" >
 
     <label for="password"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" v-model="user.password" >
+    <input type="password" class="auth-input" placeholder="Enter Password" v-model="user.password" >
 
     <label for="cpassword"><b> Confirm Password</b></label>
-    <input type="password" placeholder="Enter Password" v-model="user.password_confirmation" >
+    <input type="password" class="auth-input" placeholder="Enter Password" v-model="user.password_confirmation" >
 
     <button type="button" class="btn-auth" @click="registration" > Register</button>
   </div>
